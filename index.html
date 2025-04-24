@@ -1,106 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Milena Higa Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-d...Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+  </head>
+  <body>
 
-<header class="header">
-  <a href="#home" class="logo">Milena <span>Higa</span></a>
-  <i class="bx bx-menu" id="menu-icon"></i>
-  <nav class="navbar">
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
-  <button class="gradient-btn">Contact Me</button>
-</header>
+    <header class="header">
+        <a href="#home" class="logo">
+            Milena <span>Higa</span>
+        </a>
+        
+        <i class="bx bx-menu" id="menu-icon"></i>
 
-<section class="projects" id="projects">
-  <h2 class="heading">Projects</h2>
-  <div class="projects-box">
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
 
-    <div class="project-card">
-      <img src="AkaliPoster.jpg" alt="Project 1">
-      <h3>Project 1</h3>
-      <p>Photoshop poster featuring Akali with dynamic lighting, vertical Japanese text, and urban aesthetic.</p>
-      <div class="btn">Review Project</div>
-    </div>
+        <button class="gradient-btn">Contact Me</button>
 
-    <div class="project-card">
-      <img src="BATOM1.jpg" alt="Project 2">
-      <h3>Project 2</h3>
-      <p>3D product design in Maya featuring SHEGLAM lipstick in a stylized studio composition.</p>
-      <div class="btn">Review Project</div>
-    </div>
+    </header>
 
-    <div class="project-card">
-      <h3>Project 3</h3>
-      <img src="rocket boost.PNG" alt="Rocket Boost" style="width: 100%; height: auto;" />
-      <p>In Rocket Boost, you fly through obstacles using powerful rocket thrusters. Dodge, boost, and survive!</p>
-      <div class="btn" onclick="loadGame()">Play Game</div>
-      <div id="game-container" style="margin-top: 20px;"></div>
-    </div>
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hi, it's <span>Milena</span></h1>
+            <h3>
+                I am a <span>Game Designer</span>
+            </h3>
+            <p>I studied Game Design in the United States on a scholarship, which gave me the opportunity to learn from renowned professors currently working on major games and films. With an intermediate level of English, I was able to communicate effectively and excel academically, earning awards for my high grades. I'm someone who easily understands new concepts and is always open to learning, which has helped me absorb and apply new knowledge efficiently. Currently, I'm continuing my Game Design studies in Brazil, where I'm expanding my skills in both 2D and 3D areas.</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/milena-higa-820254324" target="_blank">
+                    <i class="bx bxl-linkedin"></i>
+                </a>
+                
+                <a href="https://www.instagram.com/miewnas" target="_blank">
+                    <i class="bx bxl-instagram"></i>
+                </a>
 
-  </div>
-</section>
+                <a href="https://www.artstation.com/mihiga" target="_blank">
+                    <i class="fab fa-artstation"></i>
+            </a>
+            </div>
 
-<section class="contact" id="contact">
-  <h2 class="heading">Contact <span>Me</span></h2>
-  <form action="#">
-    <div class="input-group">
-      <div class="input-box">
-        <input type="text" placeholder="Full Name">
-        <input type="email" placeholder="Email">
-      </div>
-      <div class="input-box">
-        <input type="number" placeholder="Phone Number">
-        <input type="text" placeholder="Subject">
-      </div>
-      <div class="input-group-2">
-        <textarea placeholder="Your Message" cols="30" rows="10"></textarea>
-        <input type="submit" value="Send Message" class="btn">
-      </div>
-    </div>
-  </form>
-</section>
 
-<footer class="footer">
-  <div class="social-icons">
-    <a href="https://www.linkedin.com/in/milena-higa-820254324" target="_blank"><i class="bx bxl-linkedin"></i></a>
-    <a href="https://www.instagram.com/miewnas" target="_blank"><i class="bx bxl-instagram"></i></a>
-    <a href="https://www.artstation.com/mihiga" target="_blank"><i class="fab fa-artstation"></i></a>
-  </div>
-  <ul class="list">
-    <li><a href="#">FAQ</a></li>
-    <li><a href="#services">Services</a></li>
-    <li><a href="#about">About Me</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-  <p class="copyright">
-    © Milena Higa | All Rights Reserved
-  </p>
-</footer>
+
+            <div class="btn-group">
+                <a href="#" class="btn">Hire</a>
+                <a href="#contact" class="btn">Contact</a>
+            </div>
+        </div>
+
+        <div class="home-img">
+            <img src="Milena.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="about" id="about">
+
+        <div class="about-img">
+            <img src="Milena.jpg" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2>About <span>Me</span></h2>
+            <p>I had the opportunity to study Game Design in the United States through a scholarship, which represented a major milestone in my academic and professional career. During this time, I was able to learn from highly qualified professors, many of whom work directly on prominent projects in the gaming and film industries. This international experience not only broadened my vision of the market, but also required me to have good communication skills — even with an intermediate level of English, I was able to express myself clearly, actively participate in classes and excel in assessments, being recognized with awards for my academic performance.
+                I am a curious, proactive person who is always willing to learn. These characteristics have been fundamental to my development, both in the academic environment and in the practical experiences I have been acquiring. I find it easy to understand new concepts and I enjoy putting them into practice in a creative and efficient way.
+                I am currently continuing my studies in Game Design in Brazil, focusing on developing the 2D and 3D areas. This deepening has allowed me to explore new possibilities within game creation, expanding my technical and artistic repertoire, in addition to strengthening my base for increasingly complete and innovative projects.</p>
+                <a href="#" class="btn">Read More</a>
+        </div>
+
+    </section>
+
+    <section class="services" id="services">
+        
+            <h2 class="heading">Services</h2>
+        
+            <div class="services-container">
+                <div class="service-box">
+                    <div class="service-info">
+                        <i class="bx bx-cube-alt"></i>
+                        <h4>3D Models/Animation</h4>
+                        <p>I work with Maya software to create 3D characters, modeling, texturing and bringing unique figures to life for game projects, animations and other visual media.</p>
+                    </div>
+                </div>
+        
+                <div class="service-box">
+                    <div class="service-info">
+                        <i class="bx bx-paint"></i>
+                        <h4>Creation of Characters</h4>
+                        <p>I work with character creation, developing unique identities that come to life in games, stories or animations. Each character I create is designed to have personality, a striking look and a clear role in the universe they inhabit.</p>
+                    </div>
+                </div>
+        
+                <div class="service-box">
+                    <div class="service-info">
+                        <i class="bx bx-code"></i>
+                        <h4>Creation of Games</h4>
+                        <p>I work with game creation, developing mechanics, narratives and visuals that provide immersive and engaging experiences for players.</p>
+                    </div>
+                </div>
+            </div> 
+        </section>
+        
+
+        <section class="projects" id="projects">
+
+            <h2 class="heading">Projects</h2>
+
+            <div class="projects-box">
+
+                <div class="project-card">
+                    <img src="AkaliPoster.jpg" alt="">
+
+                    <h3>Project 1</h3>
+                    <p>Visual design developed in Photoshop with a focus on composition, contrast and visual impact. The character Akali is centered in a dynamic spotlight, with a vibrant red and black color palette that evokes her intense and lethal personality. The use of vertical Japanese typography on the left side adds a cultural and stylistic touch, while the name "AKALI" in large scale reinforces the visual identity. Graphic elements such as smoke, the neon dragon and the dark textured background were incorporated to convey the urban ninja theme, combining modern and traditional aesthetics.</p>
+                        <div class="btn">Review Project</div>
+                </div>
+
+                <div class="project-card">
+                    <img src="BATOM1.jpg" alt="">
+
+                    <h3>Project 2</h3>
+                    <p>Design developed in Autodesk Maya with a focus on aesthetic composition, product realism and visual impact. The SHEGLAM lipstick is presented in a studio layout with a dark background, highlighting the contrast between the matte material of the packaging and the metallic shine of the golden typography. The composition highlights the sophistication and modernity of the product, using strategic lighting to enhance the geometric shapes and premium finish.</p>
+                        <div class="btn">Review Project</div>
+                </div>
+                
+               <div class="project-card">
+  <h3>Project 3</h3>
+  <img src="rocket boost.PNG" alt="Rocket Boost" style="width: 100%; height: auto;" />
+
+  <p>In Rocket Boost, you fly through obstacles using powerful rocket thrusters. Dodge, boost, and survive as long as you can!</p>
+  
+  <div class="btn" onclick="loadGame()">Play Game</div>
+  
+  <div id="game-container" style="margin-top: 20px;"></div>
+</div>
 
 <script>
   function loadGame() {
     const container = document.getElementById("game-container");
+
+    // Verifica se já foi carregado
     if (!container.innerHTML) {
       container.innerHTML = `
-        <iframe frameborder="0" src="https://itch.io/embed-upload/13471097?color=333333" allowfullscreen width="100%" height="380" loading="lazy"></iframe>
+        <iframe 
+          frameborder="0" 
+          src="https://itch.io/embed-upload/13471097?color=333333" 
+          allowfullscreen 
+          width="100%" 
+          height="380"
+          loading="lazy">
+        </iframe>
       `;
     }
   }
 </script>
-<script src="script.js"></script>
-</body>
+                
+        </section>
+
+
+    </section>
+   
+   <section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me</span></h2>
+
+    <form action="#">
+       
+        <div class="input-group">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email">
+            </div>
+
+            <div class="input-box">
+                <input type="number" placeholder="Phone Number">
+                <input type="text" placeholder="Subject">
+        </div>
+
+        <div class="input-group-2">
+            <textarea name="" id="" placeholder="Your Message" cols="30" rows="10"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </div>
+
+    </form>
+
+    <footer class="footer">
+        <div class="social-icons">
+                <a href="https://www.linkedin.com/in/milena-higa-820254324" target="_blank">
+                    <i class="bx bxl-linkedin"></i>
+                </a>
+                
+                <a href="https://www.instagram.com/miewnas" target="_blank">
+                    <i class="bx bxl-instagram"></i>
+                </a>
+
+                <a href="https://www.artstation.com/mihiga" target="_blank">
+                    <i class="fab fa-artstation"></i>
+            </a>
+        </div>
+
+        <ul class="list">
+            <li>
+                <a href="#">FAQ</a>
+            </li>
+
+            <li>
+                <a href="#services">Services</a>
+            </li>
+
+            <li>
+                <a href="#about">About Me</a>
+            </li>
+
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+
+        <p class="copyright">
+            © Milena Higa | All Rights Reserved
+        </p>
+
+    </footer>
+
+   </section>
+   
+    <script src="script.js"></script>
+  </body>
 </html>
